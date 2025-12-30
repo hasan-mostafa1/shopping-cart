@@ -1,0 +1,33 @@
+:root {
+    --background-color:#faf8f4;
+    --nav-background-color:#ffffff;
+    --main-color:#ff5722;
+    --subtle-main-color:#ff6b35;
+    --secondary-color:#794b42;
+    --icon-filter: invert(31%) sepia(13%) saturate(1544%) hue-rotate(322deg) brightness(96%) contrast(86%);
+    --hovered-icon-filter: invert(0%) sepia(99%) saturate(9%) hue-rotate(92deg) brightness(101%) contrast(100%);
+    --hover-color:#000000;
+    --hover-background-color:#ffe1d7;
+}
+
+[data-theme='dark'] {
+    --background-color:#0f0f0f;
+    --nav-background-color:#1a1a1a;
+    --main-color:#06b6d4;
+    --subtle-main-color:#0891b2;
+    --secondary-color:#94a3b8;
+    --icon-filter: invert(73%) sepia(29%) saturate(214%) hue-rotate(175deg) brightness(84%) contrast(86%);
+    --hovered-icon-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(275deg) brightness(102%) contrast(103%); 
+    --hover-color:#ffffff;
+    --hover-background-color:#16393f;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: minmax(min-content , 1fr);
+    justify-content: center;
+    transition: background-color .5s ease-in-out;
+}
