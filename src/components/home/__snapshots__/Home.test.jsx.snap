@@ -1,0 +1,61 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Home component > Renders correctly 1`] = `
+<div>
+  <div
+    class="_container_5cbdfa"
+  >
+    <header
+      class="_header_5cbdfa"
+    >
+      <h1
+        class="_heading_5cbdfa"
+      >
+        <span>
+          Your Essential Style,
+        </span>
+         
+        <br />
+        <span>
+          Carefully Chosen.
+        </span>
+      </h1>
+      <p
+        class="_description_5cbdfa"
+      >
+        Welcome to 
+        <span>
+          The Edit
+        </span>
+         - where quality, consciousness, and timeless design 
+        <br />
+         converge. We present a handpicked collection of essentials for your wardrobe 
+        <br />
+         and home, curated for a more intentional lifestyle.
+      </p>
+      <a
+        class="_exploreLink_5cbdfa"
+        data-discover="true"
+        href="/shop"
+      >
+        Explore The Collection
+      </a>
+      <p
+        class="_note_5cbdfa"
+      >
+        Discover pieces that matter.
+      </p>
+      <a
+        class="_githubLink_5cbdfa"
+        href="https://github.com/hasan-mostafa1"
+      >
+        <img
+          alt="Github profile"
+          class="_icon_5cbdfa"
+          src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%3e%3cpath%20d='M12,2A10,10%200%200,0%202,12C2,16.42%204.87,20.17%208.84,21.5C9.34,21.58%209.5,21.27%209.5,21C9.5,20.77%209.5,20.14%209.5,19.31C6.73,19.91%206.14,17.97%206.14,17.97C5.68,16.81%205.03,16.5%205.03,16.5C4.12,15.88%205.1,15.9%205.1,15.9C6.1,15.97%206.63,16.93%206.63,16.93C7.5,18.45%208.97,18%209.54,17.76C9.63,17.11%209.89,16.67%2010.17,16.42C7.95,16.17%205.62,15.31%205.62,11.5C5.62,10.39%206,9.5%206.65,8.79C6.55,8.54%206.2,7.5%206.75,6.15C6.75,6.15%207.59,5.88%209.5,7.17C10.29,6.95%2011.15,6.84%2012,6.84C12.85,6.84%2013.71,6.95%2014.5,7.17C16.41,5.88%2017.25,6.15%2017.25,6.15C17.8,7.5%2017.45,8.54%2017.35,8.79C18,9.5%2018.38,10.39%2018.38,11.5C18.38,15.32%2016.04,16.16%2013.81,16.41C14.17,16.72%2014.5,17.33%2014.5,18.26C14.5,19.6%2014.5,20.68%2014.5,21C14.5,21.27%2014.66,21.59%2015.17,21.5C19.14,20.16%2022,16.42%2022,12A10,10%200%200,0%2012,2Z'%20/%3e%3c/svg%3e"
+        />
+      </a>
+    </header>
+  </div>
+</div>
+`;

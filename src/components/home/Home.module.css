@@ -1,0 +1,109 @@
+.container {
+    max-width: 1500px;
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr repeat(4, max-content);
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+    min-height: 525px;
+}
+
+.heading {
+    font-size: clamp(1rem, 3.5rem + 1.5vw, 4rem);
+    font-weight: bold;
+    text-align: center;
+    align-self: self-end ;
+    text-shadow: 5px 3px var(--hover-background-color);
+    line-height: 1.1;
+} 
+
+.heading span:nth-of-type(2) {
+    color: var(--main-color);
+}
+
+.heading span {
+    display:inline-block;
+}
+
+.heading span:nth-of-type(1) {
+    animation: breathing 1.8s ease-in-out 0s alternate infinite;
+}
+
+.heading span:nth-of-type(2) {
+    animation: breathing 1.7s ease-in-out 0s alternate infinite;
+}
+@keyframes breathing {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(10px);
+    }
+}
+
+.description {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 30px;
+}
+
+.description span {
+    text-decoration: underline;
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.exploreLink {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: var(--main-color);
+    color: #ffffff;
+    padding: 10px 40px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform .2s ease-in-out;
+}
+
+.exploreLink:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 10px var(--hover-background-color);
+}
+
+.note {
+    font-size: 1rem;
+    font-style: italic;
+    align-self: self-start;
+}
+
+.githubLink {
+    justify-self: end;
+    align-self: self-end;
+    display: flex;
+    align-items: end;
+}
+
+.githubLink:hover .icon{
+    filter: var(--hovered-icon-filter);
+    transform: scale(1.3);
+}
+
+.icon {
+    width: 30px;
+    filter: var(--icon-filter);
+    transform-origin: right bottom;
+    transform: scale(1);
+    transition: transform .2s ease-in-out;
+}
