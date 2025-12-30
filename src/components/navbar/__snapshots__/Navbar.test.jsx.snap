@@ -1,0 +1,74 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Navbar component > Renders correctly 1`] = `
+<div>
+  <nav
+    class="_navbar_4b0a09"
+  >
+    <div
+      class="_container_4b0a09"
+    >
+      <a
+        class="_logo_4b0a09"
+        href="/"
+      >
+        <span>
+          the
+        </span>
+         EDIT
+      </a>
+      <ul
+        class="_navigationList_4b0a09"
+      >
+        <li>
+          <a
+            class="_link_4b0a09"
+            data-discover="true"
+            href="/"
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            class="_link_4b0a09"
+            data-discover="true"
+            href="/shop"
+          >
+            Shop
+          </a>
+        </li>
+        <li>
+          <a
+            class="_link_4b0a09"
+            data-discover="true"
+            href="/cart"
+          >
+            <img
+              alt=""
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%3e%3cpath%20d='M17,18C15.89,18%2015,18.89%2015,20A2,2%200%200,0%2017,22A2,2%200%200,0%2019,20C19,18.89%2018.1,18%2017,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32%205,14.65%205,15A2,2%200%200,0%207,17H19V15H7.42A0.25,0.25%200%200,1%207.17,14.75C7.17,14.7%207.18,14.66%207.2,14.63L8.1,13H15.55C16.3,13%2016.96,12.58%2017.3,11.97L20.88,5.5C20.95,5.34%2021,5.17%2021,5A1,1%200%200,0%2020,4H5.21L4.27,2M7,18C5.89,18%205,18.89%205,20A2,2%200%200,0%207,22A2,2%200%200,0%209,20C9,18.89%208.1,18%207,18Z'%20/%3e%3c/svg%3e"
+            />
+            Cart
+          </a>
+        </li>
+      </ul>
+      <button
+        class="_toggleThemeBtn_4b0a09"
+      >
+        <img
+          alt="activate dark theme"
+          src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%3e%3cpath%20d='M2%2012A10%2010%200%200%200%2015%2021.54A10%2010%200%200%201%2015%202.46A10%2010%200%200%200%202%2012Z'%20/%3e%3c/svg%3e"
+        />
+      </button>
+      <button
+        class="_menuBtn_4b0a09"
+      >
+        <img
+          alt="toggle menu"
+          src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%3e%3cpath%20d='M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z'%20/%3e%3c/svg%3e"
+        />
+      </button>
+    </div>
+  </nav>
+</div>
+`;
