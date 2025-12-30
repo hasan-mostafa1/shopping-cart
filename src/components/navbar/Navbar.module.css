@@ -59,22 +59,23 @@
     justify-content: center;
     align-items: center;
     gap: 5px;
-}
-
-.navigationList a {
     color: var(--secondary-color);
     padding: 5px 15px;
     border-radius: 10px;
     transition: all .3s ease-in-out;
 }
 
-.navigationList a:hover {
+.navigationList .link:hover:not(.active) {
     color: var(--hover-color);
     background-color: var(--hover-background-color);
 }
 
-.navigationList a:hover img{
+.navigationList .link:hover img{
     filter: var(--hovered-icon-filter);
+}
+.link.active {
+    background-color: var(--hover-background-color);
+    color: var(--main-color);
 }
 
 .toggleThemeBtn {

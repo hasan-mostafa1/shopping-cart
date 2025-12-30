@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { Link, useLocation } from "react-router";
 import moonIconUrl from "../../assets/icons/moon-waning-crescent.svg";
 import sunIconUrl from "../../assets/icons/white-balance-sunny.svg";
 import cartIconUrl from "../../assets/icons/cart.svg";
@@ -10,6 +10,7 @@ import useTheme from "./hooks/useTheme";
 export default function Navbar() {
   const [theme, setTheme] = useTheme();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
   function onClick() {
     setTheme((previous) => {
@@ -37,17 +38,38 @@ export default function Navbar() {
           }
         >
           <li>
-            <Link to="/" className={styles.link}>
+            <Link
+              to="/"
+              className={
+                location.pathname === "/"
+                  ? `${styles.link} ${styles.active}`
+                  : styles.link
+              }
+            >
               Home
             </Link>
           </li>
           <li>
-            <Link to="/shop" className={styles.link}>
+            <Link
+              to="/shop"
+              className={
+                location.pathname === "/shop"
+                  ? `${styles.link} ${styles.active}`
+                  : styles.link
+              }
+            >
               Shop
             </Link>
           </li>
           <li>
-            <Link to="/cart" className={styles.link}>
+            <Link
+              to="/cart"
+              className={
+                location.pathname === "/cart"
+                  ? `${styles.link} ${styles.active}`
+                  : styles.link
+              }
+            >
               <img src={cartIconUrl} alt="" />
               Cart
             </Link>

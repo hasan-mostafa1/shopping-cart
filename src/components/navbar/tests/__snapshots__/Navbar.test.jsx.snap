@@ -22,7 +22,7 @@ exports[`Navbar component > Renders correctly 1`] = `
       >
         <li>
           <a
-            class="_link_4b0a09"
+            class="_link_4b0a09 _active_4b0a09"
             data-discover="true"
             href="/"
           >
