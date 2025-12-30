@@ -1,13 +1,16 @@
 import { render } from "@testing-library/react";
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 import { MemoryRouter } from "react-router";
-import Home from "./Home";
+import Navbar from "../Navbar";
 
-describe("Home component", () => {
+describe("Navbar component", () => {
   it("Renders correctly", async () => {
+    window.matchMedia = vi.fn(() => {
+      return false;
+    });
     const { container } = render(
       <MemoryRouter>
-        <Home />
+        <Navbar />
       </MemoryRouter>
     );
 
