@@ -45,6 +45,9 @@ export default function Navbar() {
                   ? `${styles.link} ${styles.active}`
                   : styles.link
               }
+              onClick={() => {
+                isMenuOpen && toggleMenu();
+              }}
             >
               Home
             </Link>
@@ -57,6 +60,9 @@ export default function Navbar() {
                   ? `${styles.link} ${styles.active}`
                   : styles.link
               }
+              onClick={() => {
+                isMenuOpen && toggleMenu();
+              }}
             >
               Shop
             </Link>
@@ -69,6 +75,9 @@ export default function Navbar() {
                   ? `${styles.link} ${styles.active}`
                   : styles.link
               }
+              onClick={() => {
+                isMenuOpen && toggleMenu();
+              }}
             >
               <img src={cartIconUrl} alt="" />
               Cart
