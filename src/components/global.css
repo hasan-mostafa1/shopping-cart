@@ -6,6 +6,7 @@
     --secondary-color:#794b42;
     --icon-filter: invert(31%) sepia(13%) saturate(1544%) hue-rotate(322deg) brightness(96%) contrast(86%);
     --hovered-icon-filter: invert(0%) sepia(99%) saturate(9%) hue-rotate(92deg) brightness(101%) contrast(100%);
+    --main-color-filter: invert(49%) sepia(42%) saturate(5591%) hue-rotate(346deg) brightness(100%) contrast(102%);
     --hover-color:#000000;
     --hover-background-color:#ffe1d7;
 }
@@ -17,7 +18,8 @@
     --subtle-main-color:#0891b2;
     --secondary-color:#94a3b8;
     --icon-filter: invert(73%) sepia(29%) saturate(214%) hue-rotate(175deg) brightness(84%) contrast(86%);
-    --hovered-icon-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(275deg) brightness(102%) contrast(103%); 
+    --hovered-icon-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(275deg) brightness(102%) contrast(103%);
+    --main-color-filter: invert(76%) sepia(83%) saturate(5230%) hue-rotate(152deg) brightness(100%) contrast(95%);
     --hover-color:#ffffff;
     --hover-background-color:#16393f;
 }

@@ -1,0 +1,31 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ComingSoon component > Renders correctly 1`] = `
+<div>
+  <div
+    class="_container_d9d582"
+  >
+    <section
+      class="_section_d9d582"
+    >
+      <img
+        alt=""
+        src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%3e%3cpath%20d='M10%206.2C10%204.3%208.8%202.6%207%202V5.7H4V2C2.2%202.6%201%204.3%201%206.2C1%208.1%202.2%209.8%204%2010.4V21.4C4%2021.8%204.2%2022%204.5%2022H6.5C6.8%2022%207%2021.8%207%2021.5V10.5C8.8%209.9%2010%208.2%2010%206.2M16%208C16%208%2015.9%208%2016%208C12.1%208.1%209%2011.2%209%2015C9%2018.9%2012.1%2022%2016%2022S23%2018.9%2023%2015%2019.9%208%2016%208M16%2020C13.2%2020%2011%2017.8%2011%2015S13.2%2010%2016%2010%2021%2012.2%2021%2015%2018.8%2020%2016%2020M15%2011V16L18.6%2018.2L19.4%2017L16.5%2015.3V11H15Z'%20/%3e%3c/svg%3e"
+      />
+      <h1>
+        Coming soon...
+      </h1>
+      <p>
+        The page you are looking for still under development
+      </p>
+      <a
+        class="_link_d9d582"
+        data-discover="true"
+        href="/"
+      >
+        Back to Homepage
+      </a>
+    </section>
+  </div>
+</div>
+`;
