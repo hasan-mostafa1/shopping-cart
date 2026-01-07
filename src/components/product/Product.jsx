@@ -69,7 +69,7 @@ export default function Product({ product, cart, setCart }) {
               decreaseQunatity(product.id);
             }}
           >
-            –
+            <span>–</span>
           </button>
           <input
             type="number"
@@ -91,7 +91,7 @@ export default function Product({ product, cart, setCart }) {
               increaseQunatity(product.id);
             }}
           >
-            +
+            <span>+</span>
           </button>
         </div>
         {getFromCart(product.id) ? (

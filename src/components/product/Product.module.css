@@ -103,6 +103,13 @@
     cursor: pointer;
 }
 
+.quantity button:hover span {
+    color: var(--main-color);
+    display: inline-block;
+    transform: scale(1.3);
+    transition: all .3s ease-in-out;
+}
+
 
 .addToCartForm > button {
     display: grid;
