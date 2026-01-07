@@ -2,7 +2,9 @@ import { useEffect, useState } from "react";
 import { useOutletContext } from "react-router";
 import styles from "./Shop.module.css";
 import magnifyIconUrl from "../../assets/icons/magnify.svg";
+import loadingIconUrl from "../../assets/icons/loading.svg";
 import Product from "../product/Product";
+import ErrorPage from "../error_page/ErrorPage";
 
 export default function Shop() {
   const { products, error, loading } = useOutletContext();
@@ -57,8 +59,20 @@ export default function Shop() {
     getMatchedProducts();
   }, [selectedCategory, searchValue, products]);
 
-  if (error) return <p>A network error was encountered</p>;
-  if (loading) return <p>Loading...</p>;
+  if (error)
+    return (
+      <ErrorPage
+        errorTitle="Oops!"
+        errorMessage="A network error was encountered."
+      />
+    );
+  if (loading)
+    return (
+      <div className={styles.loading}>
+        <img src={loadingIconUrl} alt="" />
+        <p>Loading...</p>
+      </div>
+    );
 
   return (
     <div className={styles.container}>

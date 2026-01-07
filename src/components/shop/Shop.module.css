@@ -104,3 +104,28 @@
     display: grid;
     gap: 10px;
 }
+
+.loading {
+    align-self: center;
+    display: grid;
+    gap: 10px;
+}
+
+.loading img {
+    filter: var(--icon-filter);
+    animation: loading .5s linear  infinite;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+.loading p {
+    font-size: 1.2rem;
+}
