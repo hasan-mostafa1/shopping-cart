@@ -2,7 +2,7 @@
     max-width: 300px;
     max-height: 530px;
     display: grid;
-    grid-template-columns: 300px;
+    grid-template-columns: 1fr;
     grid-template-rows:  300px 1fr min-content;
     justify-content: center;
     border: 1px solid var(--border-color);

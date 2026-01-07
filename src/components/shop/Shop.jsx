@@ -83,7 +83,7 @@ export default function Shop() {
           pieces for every occasion.
         </p>
       </div>
-      <form className={styles.navifgationForm}>
+      <form className={styles.filters}>
         <div className={styles.searchBar}>
           <img src={magnifyIconUrl} alt="magnify-icon" />
           <input
@@ -95,26 +95,28 @@ export default function Shop() {
             onChange={(e) => setSearchValue(e.target.value)}
           />
         </div>
-        <button
-          type="button"
-          onClick={() => setSelectedCategory("all")}
-          key="all"
-          className={selectedCategory === "all" ? styles.active : ""}
-        >
-          All
-        </button>
-        {Object.keys(categories).map((category) => {
-          return (
-            <button
-              type="button"
-              onClick={() => setSelectedCategory(category)}
-              key={category}
-              className={selectedCategory === category ? styles.active : ""}
-            >
-              {category}
-            </button>
-          );
-        })}
+        <div className={styles.btns}>
+          <button
+            type="button"
+            onClick={() => setSelectedCategory("all")}
+            key="all"
+            className={selectedCategory === "all" ? styles.active : ""}
+          >
+            All
+          </button>
+          {Object.keys(categories).map((category) => {
+            return (
+              <button
+                type="button"
+                onClick={() => setSelectedCategory(category)}
+                key={category}
+                className={selectedCategory === category ? styles.active : ""}
+              >
+                {category}
+              </button>
+            );
+          })}
+        </div>
       </form>
 
       {matchedProducts && matchedProducts.length > 0 ? (
