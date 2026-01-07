@@ -1,0 +1,106 @@
+.container {
+    max-width: 1500px;
+    flex-grow: 1;
+    display: grid;
+    grid-template-rows: repeat(2, max-content) 1fr;
+    gap: 15px;
+    padding: 30px;
+    min-height: 80vh;
+}
+
+.heading {
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    text-align: center;
+    padding: 10px;
+}
+
+.heading h1{
+    font-size: clamp(1rem, 2.3rem + 1.5vw, 4rem);
+}
+
+.heading p{
+    font-size: 1rem;
+}
+
+.navifgationForm {
+    display: flex;
+    flex-wrap:wrap;
+    gap: 8px;
+    background-color: var(--nav-background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.navifgationForm button {
+    flex-grow: 1;
+    background-color: var(--nav-background-color);
+    color: var(--secondary-color);
+    padding: 10px 40px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    text-align: center;
+    transition: transform .2s ease-in-out;
+}
+
+.navifgationForm button:hover {
+    background-color: var(--main-hover);
+    border-color: var(--main-color);
+    color: var(--nav-background-color);
+    box-shadow: 0px 0px 10px 5px var(--hover-background-color);
+}
+
+.navifgationForm button.active {
+    background-color: var(--main-color);
+    color: #ffffff;
+}
+
+.searchBar {
+    flex-grow: 1;
+    display: flex;
+    position: relative;
+}
+
+.searchBar img{
+    width: 25px;
+    position: absolute;
+    top: 25%;
+    left: 4%;
+    filter: var(--icon-filter);
+}
+
+.searchBar input {
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    flex-grow: 1;
+    background-color: var(--background-color);
+    color: var(--hover-color);
+    padding: 0px 15px 0px 45px;
+}
+
+.searchBar input:focus {
+    outline:none;
+    border-color: var(--main-color);
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min-content,300px));
+    justify-content: space-evenly;
+    gap:25px
+}
+
+.noMatchedProducts {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.noMatchedProducts div {
+    text-align: center;
+    display: grid;
+    gap: 10px;
+}

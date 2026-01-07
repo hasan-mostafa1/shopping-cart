@@ -2,6 +2,7 @@ import App from "./components/app/App";
 import Home from "./components/home/Home";
 import ComingSoon from "./components/coming_soon/ComingSoon";
 import ErrorPage from "./components/error_page/ErrorPage";
+import Shop from "./components/shop/Shop";
 
 const routes = [
   {
@@ -10,8 +11,9 @@ const routes = [
     errorElement: <ErrorPage />,
     children: [
       { index: true, element: <Home /> },
-      { path: "shop", element: <ComingSoon /> },
+      { path: "shop", element: <Shop /> },
       { path: "cart", element: <ComingSoon /> },
+      { path: "products/:id", element: <ComingSoon /> },
     ],
   },
 ];

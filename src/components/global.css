@@ -9,6 +9,8 @@
     --main-color-filter: invert(49%) sepia(42%) saturate(5591%) hue-rotate(346deg) brightness(100%) contrast(102%);
     --hover-color:#000000;
     --hover-background-color:#ffe1d7;
+    --border-color: #d1c8be;
+    --main-hover: #ff5722;
 }
 
 [data-theme='dark'] {
@@ -22,6 +24,9 @@
     --main-color-filter: invert(76%) sepia(83%) saturate(5230%) hue-rotate(152deg) brightness(100%) contrast(95%);
     --hover-color:#ffffff;
     --hover-background-color:#16393f;
+    --border-color: #334155;
+    --main-hover: #0891b2;
+
 }
 
 body {
