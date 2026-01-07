@@ -8,7 +8,12 @@ const routes = [
   {
     path: "/",
     element: <App />,
-    errorElement: <ErrorPage />,
+    errorElement: (
+      <ErrorPage
+        errorTitle="Page Not Found"
+        errorMessage="The page you're looking for doesn't exist or has been moved."
+      />
+    ),
     children: [
       { index: true, element: <Home /> },
       { path: "shop", element: <Shop /> },
