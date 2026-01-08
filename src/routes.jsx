@@ -16,9 +16,8 @@ const routes = [
     ),
     children: [
       { index: true, element: <Home /> },
-      { path: "shop", element: <Shop /> },
+      { path: "shop/:productTitle?", element: <Shop /> },
       { path: "cart", element: <ComingSoon /> },
-      { path: "products/:id", element: <ComingSoon /> },
     ],
   },
 ];

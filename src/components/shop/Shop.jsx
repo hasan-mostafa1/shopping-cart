@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
-import { useOutletContext } from "react-router";
+import { useOutletContext, useParams } from "react-router";
 import styles from "./Shop.module.css";
 import magnifyIconUrl from "../../assets/icons/magnify.svg";
 import loadingIconUrl from "../../assets/icons/loading.svg";
 import Product from "../product/Product";
 import ErrorPage from "../error_page/ErrorPage";
+import ComingSoon from "../coming_soon/ComingSoon";
 
 export default function Shop() {
   const { products, error, loading } = useOutletContext();
@@ -13,6 +14,7 @@ export default function Shop() {
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [searchValue, setSearchValue] = useState("");
   const [matchedProducts, setMatchedProducts] = useState([]);
+  const { productTitle } = useParams();
 
   useEffect(() => {
     async function getCategories() {
@@ -59,20 +61,27 @@ export default function Shop() {
     getMatchedProducts();
   }, [selectedCategory, searchValue, products]);
 
-  if (error)
+  if (error) {
     return (
       <ErrorPage
         errorTitle="Oops!"
         errorMessage="A network error was encountered."
       />
     );
-  if (loading)
+  }
+
+  if (loading) {
     return (
       <div className={styles.loading}>
         <img src={loadingIconUrl} alt="" />
         <p>Loading...</p>
       </div>
     );
+  }
+
+  if (productTitle) {
+    return <ComingSoon />;
+  }
 
   return (
     <div className={styles.container}>

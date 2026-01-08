@@ -53,7 +53,14 @@ export default function Product({ product, cart, setCart }) {
   }
   return (
     <div className={styles.product}>
-      <Link to={`product/${product.id}`} className={styles.link}>
+      <Link
+        to={`${product.title
+          .trim()
+          .split(/\s+/)
+          .filter((str) => str !== "-" && str !== "–")
+          .join("-")}`}
+        className={styles.link}
+      >
         <img src={product.image} alt="" />
       </Link>
       <div className={styles.description}>
