@@ -36,10 +36,24 @@ export default function Product({ product, cart, setCart }) {
   }
 
   function addToCart(productId) {
-    setCart([
-      ...cart,
-      { productId: productId, quantity: quantities[productId]?.quantity || 1 },
-    ]);
+    let isInCart = false;
+    const updatedCart = cart.map((product) => {
+      if (product.productId === productId) {
+        isInCart = true;
+        product.quantity = quantities[productId]?.quantity || 1;
+      }
+      return product;
+    });
+
+    isInCart
+      ? setCart([...updatedCart])
+      : setCart([
+          ...cart,
+          {
+            productId: productId,
+            quantity: quantities[productId]?.quantity || 1,
+          },
+        ]);
   }
 
   function getFromCart(productId) {
