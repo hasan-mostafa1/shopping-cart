@@ -120,6 +120,7 @@ export default function Shop() {
                 onClick={() => setSelectedCategory(category)}
                 key={category}
                 className={selectedCategory === category ? styles.active : ""}
+                data-testid="category-btn"
               >
                 {category}
               </button>

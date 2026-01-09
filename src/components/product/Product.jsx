@@ -52,7 +52,7 @@ export default function Product({ product, cart, setCart }) {
     return product;
   }
   return (
-    <div className={styles.product}>
+    <div className={styles.product} data-testid="product">
       <Link
         to={`${product.title
           .trim()
