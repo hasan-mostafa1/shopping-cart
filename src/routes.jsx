@@ -1,6 +1,6 @@
 import App from "./components/app/App";
 import Home from "./components/home/Home";
-import ComingSoon from "./components/coming_soon/ComingSoon";
+import Cart from "./components/cart/Cart";
 import ErrorPage from "./components/error_page/ErrorPage";
 import Shop from "./components/shop/Shop";
 
@@ -17,7 +17,7 @@ const routes = [
     children: [
       { index: true, element: <Home /> },
       { path: "shop/:productTitle?", element: <Shop /> },
-      { path: "cart", element: <ComingSoon /> },
+      { path: "cart", element: <Cart /> },
     ],
   },
 ];
