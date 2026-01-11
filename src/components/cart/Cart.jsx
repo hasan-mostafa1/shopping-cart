@@ -68,7 +68,7 @@ export default function Cart() {
             {cart.map((item, index) => {
               let product = getProductById(item.productId);
               return (
-                <div className={styles.item}>
+                <div className={styles.item} data-testid="cart-item">
                   <div className={styles.content}>
                     <Link className={styles.link}>
                       <img src={product.image} alt="" />
@@ -120,7 +120,7 @@ export default function Cart() {
                       removeItem(index);
                     }}
                   >
-                    <img src={deleteIconUrl} alt="" />
+                    <img src={deleteIconUrl} alt="Remove item from cart" />
                   </button>
                 </div>
               );
